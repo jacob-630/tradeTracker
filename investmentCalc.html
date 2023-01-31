@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Tracker</title>
+    <script src="investmentCalc.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="topBar">
+            <h3 class="logo">Header Logo</h3>
+            <div class="topLinks">
+                <a href="index.html">Home</a>
+                <a href="">About Trade Tracker</a>
+                <a href="">header link three</a>
+            </div>
+        </div>
+        <div class="headerContent">
+            <div class="headerContentLeft">
+                <h1 style="flex-wrap:wrap;">Free Investment Calculator</h1>
+                <p>This is Trade Trackers free investment calculator, using information we collect
+                    we can calculate the current price of an investment and dynamically generate a graph
+                    to display this data. Additionally based of previous trends of a stock Trade Tracker
+                    is able to predict the future price of a stock
+                </p>
+            </div>
+            <div class="imageHolder">
+                <p>this is a placeholder for an image</p>
+            </div>
+        </div>
+    </div>
+    <div class="secTwo">
+        <h2 style="text-align:center;font-size:36px;font-weight:bolder;color:#1F2937;">Please input the following information</h2>
+        <table class="investmentCalcInfo" align="center" border="solid"  >
+            <tr align="left">
+                <th><label for="PrincipalInvestment"> Principal Investment: </label></th>
+                <td><input type="number" name="PrincipalInvestment" id="usersPrincipalInvestment"></td>
+            </tr>
+            <tr align="left">
+                <th><label for="HoldDuration"> Hold Duration (in years): </label></th>
+                <td><input type="number" name="HoldDuration" id="userHoldDuration"></td>
+            </tr>
+            <tr align="left">
+                <th><label for="avgRateOfReturn"> Averge Rate of Return (per year): </label></th>
+                <td><input type="number" name="avgRateOfReturn" id="userAvgRateOfReturn"></td>
+            </tr>
+        </table>
+        <button id="investmentCalcBtn">Calculate</button>
+    </div>
+    
+    <div class="footer">
+        <p>Copyright @ Jacob Vaanholt 2021</p>
+    </div>
+</body>
+</html>

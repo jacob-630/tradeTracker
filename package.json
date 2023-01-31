@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "yahoo-stock-api": "^2.0.0"
+  }
+}
