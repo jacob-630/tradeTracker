@@ -21,6 +21,10 @@ h1{
     color: #F9FAF8;
 }
 
+input{
+    border-style: none;
+}
+
 .header{
     background-color: #1F2937;
     font-size: 18px;
@@ -40,7 +44,8 @@ h1{
 .topBar{
     padding-bottom: 65px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 5%;
     flex:1;
 
     /*border-style:dotted;
@@ -209,6 +214,14 @@ button{
     border-style:solid;
     border-color:#F9FAF8;
     border-width:3px;
+}
+
+#calculateAnswerArea{
+    text-align: center;
+}
+
+#investmentCalcBtn{
+    justify-content: center;
 }
 
 .footer{
