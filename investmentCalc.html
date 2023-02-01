@@ -33,19 +33,23 @@
         </div>
     </div>
     <div class="secTwo">
-        <h2 style="text-align:center;font-size:36px;font-weight:bolder;color:#1F2937;">Please input the following information</h2>
+        <h2 style="text-align:center;font-size:36px;font-weight:bolder;color:#1F2937;">Please input the following information:</h2>
         <table class="investmentCalcInfo" align="center" border="solid"  >
             <tr align="left">
                 <th><label for="PrincipalInvestment"> Principal Investment: </label></th>
-                <td><input type="number" name="PrincipalInvestment" id="usersPrincipalInvestment"></td>
+                <td><input type="number" name="PrincipalInvestment" id="usersPrincipalInvestment">$</td>
             </tr>
             <tr align="left">
-                <th><label for="HoldDuration"> Hold Duration (in years): </label></th>
-                <td><input type="number" name="HoldDuration" id="userHoldDuration"></td>
+                <th><label for="HoldDuration"> Hold Duration: </label></th>
+                <td><input type="number" name="HoldDuration" id="userHoldDuration">years</td>
             </tr>
             <tr align="left">
-                <th><label for="avgRateOfReturn"> Averge Rate of Return (per year): </label></th>
-                <td><input type="number" name="avgRateOfReturn" id="userAvgRateOfReturn"></td>
+                <th><label for="avgRateOfReturn"> Averge Annual Rate of Return: </label></th>
+                <td><input type="number" name="avgRateOfReturn" id="userAvgRateOfReturn">%</td>
+            </tr>
+            <tr align="left">
+                <th><label for="AdditionalContributions">Additional Annual Contribution:</label></th>
+                <td><input type="number" name="AdditionalContributions" id="userAdditionalContribution">$</td>
             </tr>
         </table>
         <button id="investmentCalcBtn">Calculate</button>
