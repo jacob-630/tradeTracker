@@ -1,6 +1,9 @@
+
+/* Elements Styling */
 body{
     font-family:'roboto', sans-serif;
-
+    padding: 0px;
+    margin: 0px;
     display: flex;
     flex-direction:column;
 
@@ -24,6 +27,21 @@ h1{
 input{
     border-style: none;
 }
+
+button{
+    background-color:#3882F6;
+    color:#F9FAF8;
+    border-style:none;
+    border-radius: 5px;
+    height:30px;
+    width:90px;
+    font-size: 18px;
+    font-weight:bold;
+}
+
+
+
+/* Class Styling */
 
 .header{
     background-color: #1F2937;
@@ -56,7 +74,7 @@ input{
 
 .logo{
     font-size:24px;
-    color: #F9FAF8;
+    color: #3882F6;
 
     /*border-style:dotted;
     border-width:4px;
@@ -95,16 +113,7 @@ input{
     border-color:yellow;*/
 }
 
-button{
-    background-color:#3882F6;
-    color:#F9FAF8;
-    border-style:none;
-    border-radius: 5px;
-    height:30px;
-    width:90px;
-    font-size: 18px;
-    font-weight:bold;
-}
+
 
 .imageHolder{
     background-color: gray;
@@ -216,14 +225,6 @@ button{
     border-width:3px;
 }
 
-#calculateAnswerArea{
-    text-align: center;
-}
-
-#investmentCalcBtn{
-    justify-content: center;
-}
-
 .footer{
     padding-top: 25px;
     padding-bottom: 25px;
@@ -233,4 +234,58 @@ button{
     justify-content: center;
     align-items: center;
     flex:1;
+}
+
+/* ID Styling */
+
+#calculateAnswerArea{
+    text-align: center;
+}
+
+#investmentCalcBtn{
+    justify-content: center;
+}
+
+#aboutTradeTracker{
+    display: flex;
+    
+}
+
+#aboutMe{
+    display: flex;
+}
+
+#aboutSec{
+    text-align: center;
+    margin:3%;
+}
+
+#tradeTrackerImg{
+    height: 250px;
+    width: 50%;
+    margin: 2%;
+    background-color: #1F2937;
+}
+
+#meImg{
+    height: 250px;
+    width: 50%;
+    margin: 2%;
+    background-color: #1F2937;
+}
+
+#meTxt{
+    padding: 10px;
+    text-align: left;
+    flex: 1 1 0;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#tradeTrackerTxt{
+    padding: 10px;
+    text-align: left;
+    flex: 1 1 0;
+    border-style: solid;
+    border-width: 1px;
 }
