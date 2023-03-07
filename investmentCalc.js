@@ -7,7 +7,6 @@ calculateBtn.addEventListener("click", calculating);
 
 
 
-
 //create the elements in which the answer will be stored
 const calculateAnswerArea = document.createElement("div");
 const calculatedAnswer    = document.createElement("h3");
@@ -21,9 +20,10 @@ function calculating(){
     let rateOfReturn            = document.getElementById("userAvgRateOfReturn").value;
     let additionalContributions = document.getElementById("userAdditionalContribution").value;
     
-    let currentSum = moneyMade(principal, holdDuration, rateOfReturn, additionalContributions);
-
-    calculatedAnswer.textContent = `Your current balance is: ${currentSum} out of this compound interest made you ${currentSum - principal}`;
+    let currentSum    = moneyMade(principal, additionalContributions, rateOfReturn, holdDuration);
+    let totalInvested = holdDuration * additionalContributions + parseInt(principal);
+    calculatedAnswer.textContent = `Your current balance is: ${currentSum} out of this compound interest made you
+     ${currentSum - totalInvested}`;
 
     calculateAnswerArea.appendChild(calculatedAnswer);
     displayResultArea.appendChild(calculateAnswerArea);
@@ -33,15 +33,12 @@ function calculating(){
 //function that runs the compound interest calculation 
 function moneyMade(principal, additionalContributions, rateOfReturn, holdDuration){
 
-    let newAmount = 0;
 
     let P = principal;
     let R = rateOfReturn/100;
     let N = 1;
     let PMT = additionalContributions;
     let T = holdDuration;
-    newAmount =  (P * (Math.pow((R/N+1), (N*T)))) + PMT * ((Math.pow((R/N +1), (N*T))) - 1)/(R/N);
-
-    newAmount = Math.round(newAmount*100)/100
+    newAmount =  Math.round((P * (Math.pow((R/N+1), (N*T)))) + (PMT * ((Math.pow((R/N+1), (N*T))) - 1)/(R/N))*100)/100;
     return newAmount;
 }
